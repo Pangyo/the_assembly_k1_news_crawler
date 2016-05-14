@@ -1,13 +1,12 @@
 '''
-Created on 2016. 5. 8.
-
-Information : LOG Helper
+Created on 2016. 5. 14.
 
 @author: yunjae
 '''
 
 import logging
 import logging.handlers
+
 
 # log instance
 logger = logging.getLogger('yunjaekim')
@@ -22,6 +21,7 @@ fileHandler.setFormatter(fomatter)
 streamHandler.setFormatter(fomatter)
 logger.addHandler(fileHandler)
 logger.addHandler(streamHandler)
+
 
 def DEBUG(msg):
     logger.setLevel(logging.DEBUG)
@@ -38,5 +38,3 @@ def FATAL(msg):
 def WARN(msg):
     logger.setLevel(logging.WARN)
     logger.warn(msg)
-    
-

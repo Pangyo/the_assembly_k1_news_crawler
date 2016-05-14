@@ -15,7 +15,7 @@ from Common import str_naver
 
 from Product_Politics.Model import naver_presidentModel
 
-ListNaverPs = []
+
 
 def GetPresidentList(item_url):
     index = 1;
