@@ -8,9 +8,8 @@ from Helper.LogHelper import LOG
 
 from Common.CommonClass.BaseClass import BaseClass
 
-from Product.NaverPoliticsManager.Common import str_naver
-from Product.NaverPoliticsManager.Service.presidentService import PresidentService
-
+from Product.NaverPoliticsManager.Common import NaverResources
+from Product.NaverPoliticsManager.Service.PresidentService import PresidentService
 
 class ShellMain(BaseClass):
     
@@ -24,15 +23,13 @@ class ShellMain(BaseClass):
     def Startup(self):
         self.Pre_Initialize()
         
-        for ps in self._president.GetPresidentList(str_naver.CONST_NAVER_POLITICS_URL):
+        for ps in self._president.GetPresidentList(NaverResources.CONST_NAVER_POLITICS_PRESIDENT_URL):
             print(ps.index)
             print(ps.link)
             print(ps.title)
             print(ps.writer)
             print(ps.date)
     
-        
-
 if __name__ == '__main__':
     
     sm = ShellMain()

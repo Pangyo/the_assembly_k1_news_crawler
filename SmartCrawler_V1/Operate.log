@@ -1,5 +1,0 @@
-[DEBUG:28] 2016-05-15 03:00:27,277 > Product Initialize.
-[DEBUG:28] 2016-05-15 03:00:27,281 > Product.NaverPoliticsManager Initialize.
-[DEBUG:28] 2016-05-15 03:00:27,290 > Product.NaverPoliticsManager.presidentService Initialize.
-[DEBUG:28] 2016-05-15 03:00:27,542 > Product.NaverPoliticsManager.presidentModel Initialize.
-[DEBUG:28] 2016-05-15 03:00:27,543 > Pre-initialize.
