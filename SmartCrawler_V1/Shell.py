@@ -30,8 +30,6 @@ class ShellMain(BaseClass):
             print(ps.title)
             print(ps.writer)
             print(ps.date)
-    
-        
 
 if __name__ == '__main__':
     
