@@ -7,13 +7,15 @@ Created on 2016. 5. 14.
 import logging
 import logging.handlers
 
+from Common.Language import Resources
+
 
 # log instance
 logger = logging.getLogger('yunjaekim')
 fomatter = logging.Formatter('[%(levelname)s:%(lineno)s] %(asctime)s > %(message)s')
 
 # file name
-fileHandler = logging.FileHandler('./Operate.log')
+fileHandler = logging.FileHandler(Resources.CONST_LOG_PATH)
 streamHandler = logging.StreamHandler()
 
 # link

@@ -13,7 +13,6 @@ from bs4 import BeautifulSoup
 from Common.Language import Resources
 from Common.CommonClass.BaseClass import BaseClass
 
-from Product.NaverPoliticsManager.Common import NaverResources
 from Product.NaverPoliticsManager.Common import CommonNaver
 from Product.NaverPoliticsManager.Model.President import PresidentModel
 
@@ -28,7 +27,7 @@ class PresidentService(BaseClass):
     
         # Get Text HTML
         soup = CommonNaver.GetTextHTMLPARSER(item_url)
-        
+    
         for li in soup.find('ul', {'class':'type06_headline'}).findAll('li'):    
             
             # PresidentModel
@@ -40,9 +39,9 @@ class PresidentService(BaseClass):
                     title = str(Dtclass)
                 
                 except KeyError:
-                    title = NaverResources.CONST_NAVER_LIST
+                    title = Resources.CONST_NAVER_LIST
                     
-                if(title == NaverResources.CONST_NAVER_LIST):
+                if(title == Resources.CONST_NAVER_LIST):
                    
                     # index
                     naver_ps.SetIndex(index)
@@ -74,9 +73,9 @@ class PresidentService(BaseClass):
                     title = str(Dtclass)
                 
                 except KeyError:
-                    title = NaverResources.CONST_NAVER_LIST
+                    title = Resources.CONST_NAVER_LIST
                     
-                if(title == NaverResources.CONST_NAVER_LIST):
+                if(title == Resources.CONST_NAVER_LIST):
                    
                     # index
                     naver_ps.SetIndex(index)
